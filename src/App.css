@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -67,4 +73,66 @@ li{
 }
 button + button{
   background-color: red;
+}
+
+#error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d62e2e;
+  font-size: 18px;
+  font-weight: bold;
+  border: 0.2rem solid black;
+
+  padding: 1rem 3.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#error > h2{
+  flex: 1;
+  margin-bottom: 1rem;
+  border-bottom: .2rem solid black;
+  font-size: xx-large;
+  padding: 0 1.5rem;
+  border-radius: .5rem;
+}
+
+#error > p{
+  flex: 1;
+  padding: 1rem;
+  letter-spacing: 1px;
+  background-color: #282c347a;
+  color: white;
+
+  cursor: default;
+}
+
+#error > button{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #4CAF50;
+  color: white;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#error > button:hover{
+  background-color: #3e8e41;
+}
+
+.activo{
+  display: block;
+}
+
+.inactivo{
+  display: none;
 }
